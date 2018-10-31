@@ -1,0 +1,2 @@
+# STM32cube_HAL_Learning
+STM32cubeMX以及HAL库的学习，内容包含工程文件和帮助文档。
