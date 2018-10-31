@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"jc1-1_key_ctr_led\startup_stm32f103xe.o"
+"jc1-1_key_ctr_led\main.o"
+"jc1-1_key_ctr_led\gpio.o"
+"jc1-1_key_ctr_led\stm32f1xx_it.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_msp.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_gpio_ex.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_tim.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_tim_ex.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_rcc.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_rcc_ex.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_gpio.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_dma.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_cortex.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_pwr.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_flash.o"
+"jc1-1_key_ctr_led\stm32f1xx_hal_flash_ex.o"
+"jc1-1_key_ctr_led\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "JC1-1_KEY_CTR_LED\JC1-1_KEY_CTR_LED.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "JC1-1_KEY_CTR_LED.map" -o JC1-1_KEY_CTR_LED\JC1-1_KEY_CTR_LED.axf

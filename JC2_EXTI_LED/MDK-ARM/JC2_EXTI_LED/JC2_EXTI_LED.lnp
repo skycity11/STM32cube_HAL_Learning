@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"jc2_exti_led\startup_stm32f103xe.o"
+"jc2_exti_led\main.o"
+"jc2_exti_led\gpio.o"
+"jc2_exti_led\stm32f1xx_it.o"
+"jc2_exti_led\stm32f1xx_hal_msp.o"
+"jc2_exti_led\stm32f1xx_hal_gpio_ex.o"
+"jc2_exti_led\stm32f1xx_hal_tim.o"
+"jc2_exti_led\stm32f1xx_hal_tim_ex.o"
+"jc2_exti_led\stm32f1xx_hal.o"
+"jc2_exti_led\stm32f1xx_hal_rcc.o"
+"jc2_exti_led\stm32f1xx_hal_rcc_ex.o"
+"jc2_exti_led\stm32f1xx_hal_gpio.o"
+"jc2_exti_led\stm32f1xx_hal_dma.o"
+"jc2_exti_led\stm32f1xx_hal_cortex.o"
+"jc2_exti_led\stm32f1xx_hal_pwr.o"
+"jc2_exti_led\stm32f1xx_hal_flash.o"
+"jc2_exti_led\stm32f1xx_hal_flash_ex.o"
+"jc2_exti_led\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "JC2_EXTI_LED\JC2_EXTI_LED.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "JC2_EXTI_LED.map" -o JC2_EXTI_LED\JC2_EXTI_LED.axf

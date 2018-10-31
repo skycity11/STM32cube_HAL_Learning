@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"jc_led\startup_stm32f103xe.o"
+"jc_led\main.o"
+"jc_led\gpio.o"
+"jc_led\stm32f1xx_it.o"
+"jc_led\stm32f1xx_hal_msp.o"
+"jc_led\stm32f1xx_hal_gpio_ex.o"
+"jc_led\stm32f1xx_hal_tim.o"
+"jc_led\stm32f1xx_hal_tim_ex.o"
+"jc_led\stm32f1xx_hal.o"
+"jc_led\stm32f1xx_hal_rcc.o"
+"jc_led\stm32f1xx_hal_rcc_ex.o"
+"jc_led\stm32f1xx_hal_gpio.o"
+"jc_led\stm32f1xx_hal_dma.o"
+"jc_led\stm32f1xx_hal_cortex.o"
+"jc_led\stm32f1xx_hal_pwr.o"
+"jc_led\stm32f1xx_hal_flash.o"
+"jc_led\stm32f1xx_hal_flash_ex.o"
+"jc_led\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "JC_LED\JC_LED.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "JC_LED.map" -o JC_LED\JC_LED.axf

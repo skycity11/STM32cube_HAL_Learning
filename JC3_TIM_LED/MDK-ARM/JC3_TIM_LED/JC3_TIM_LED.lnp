@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"jc3_tim_led\startup_stm32f103xe.o"
+"jc3_tim_led\main.o"
+"jc3_tim_led\gpio.o"
+"jc3_tim_led\tim.o"
+"jc3_tim_led\stm32f1xx_it.o"
+"jc3_tim_led\stm32f1xx_hal_msp.o"
+"jc3_tim_led\stm32f1xx_hal_gpio_ex.o"
+"jc3_tim_led\stm32f1xx_hal_tim.o"
+"jc3_tim_led\stm32f1xx_hal_tim_ex.o"
+"jc3_tim_led\stm32f1xx_hal.o"
+"jc3_tim_led\stm32f1xx_hal_rcc.o"
+"jc3_tim_led\stm32f1xx_hal_rcc_ex.o"
+"jc3_tim_led\stm32f1xx_hal_gpio.o"
+"jc3_tim_led\stm32f1xx_hal_dma.o"
+"jc3_tim_led\stm32f1xx_hal_cortex.o"
+"jc3_tim_led\stm32f1xx_hal_pwr.o"
+"jc3_tim_led\stm32f1xx_hal_flash.o"
+"jc3_tim_led\stm32f1xx_hal_flash_ex.o"
+"jc3_tim_led\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "JC3_TIM_LED\JC3_TIM_LED.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "JC3_TIM_LED.map" -o JC3_TIM_LED\JC3_TIM_LED.axf
