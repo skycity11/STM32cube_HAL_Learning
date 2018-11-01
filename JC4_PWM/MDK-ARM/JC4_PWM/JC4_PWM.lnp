@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"jc4_pwm\startup_stm32f103xe.o"
+"jc4_pwm\main.o"
+"jc4_pwm\gpio.o"
+"jc4_pwm\tim.o"
+"jc4_pwm\stm32f1xx_it.o"
+"jc4_pwm\stm32f1xx_hal_msp.o"
+"jc4_pwm\stm32f1xx_hal_gpio_ex.o"
+"jc4_pwm\stm32f1xx_hal_tim.o"
+"jc4_pwm\stm32f1xx_hal_tim_ex.o"
+"jc4_pwm\stm32f1xx_hal.o"
+"jc4_pwm\stm32f1xx_hal_rcc.o"
+"jc4_pwm\stm32f1xx_hal_rcc_ex.o"
+"jc4_pwm\stm32f1xx_hal_gpio.o"
+"jc4_pwm\stm32f1xx_hal_dma.o"
+"jc4_pwm\stm32f1xx_hal_cortex.o"
+"jc4_pwm\stm32f1xx_hal_pwr.o"
+"jc4_pwm\stm32f1xx_hal_flash.o"
+"jc4_pwm\stm32f1xx_hal_flash_ex.o"
+"jc4_pwm\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "JC4_PWM\JC4_PWM.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "JC4_PWM.map" -o JC4_PWM\JC4_PWM.axf
